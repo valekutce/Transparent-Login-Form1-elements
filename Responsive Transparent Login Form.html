@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <!-- Design by Ground Tutorial (groundtutorial.com) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Responsive Transparent Login Form</title>
+  <style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+text-decoration: none;
+letter-spacing: 1px;
+}
+
+body{
+background: url("https://www.wallpaperuse.com/wallp/47-478047_m.jpg");
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.wrapper{
+width: 350px;
+max-width: 100%;
+height: 100%;
+border: 1px solid rgba(255, 255, 255, 0.438);
+border-radius: 8px;
+background: rgba(105, 105, 105, 0.2);
+backdrop-filter: blur(10px);
+margin: 50px auto;
+padding: 15px;
+}
+
+.wrapper .title h1{
+text-align: center;
+color: #fff;
+margin-bottom: 30px;
+}
+
+.login-container{
+width: 100%
+}
+
+.login-container .email{
+margin-bottom: 35px;
+position: relative;
+}
+
+.login-container .fas{
+position: absolute;
+bottom: 15px;
+right: 25px;
+font-size: 25px;
+color: #ecf1f6;
+}
+
+.login-container .label{
+display: block;
+color: #edeef5;
+margin-bottom: 5px;
+}
+
+.login-container .input{
+max-width: 325px;
+width: 100%;
+border: 2px solid rgb(180, 179, 180);
+padding: 20px 15px;
+font-size: 16px;
+border-radius: 5px;
+background: rgba(105, 105, 105, 0.55);
+font-weight: bold;
+outline: none;
+}
+
+::-webkit-input-placeholder {
+/* Chrome/Opera/Safari */
+color: #d2dbe4;
+}
+::-moz-placeholder {
+/* Firefox 19+ */
+color: #d2dbe4;
+}
+:-ms-input-placeholder {
+/* IE 10+ */
+color: #d2dbe4;
+}
+
+.login-container .password{
+margin-bottom: 20px;
+position: relative;
+}
+
+.login-container .forgot{
+margin-bottom: 30px;
+}
+
+.login-container .forgot a{
+float: right;
+color: #e4e81b;
+transition: all 0.5s ease;
+}
+
+.login-container .forgot a:hover{
+color: #fff;
+}
+
+.login{
+background: #177ea3;
+text-align:  center;
+border-radius: 5px;
+padding: 20px;
+
+}
+
+.login a{
+font-size: 20px;
+color: #fff;
+}
+  </style>
+</head>
+<body>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+  <div class="wrapper">
+    <div class="title"><h1>Sign in</h1></div>
+
+    <div class="login-container">
+      <div class="email">
+        <label class="label">Email ID</label>
+        <input type="text" class="input" placeholder="xyz@gmail.com">
+        <i class="fas fa-address-book"></i>
+      </div>
+
+      <div class="password">
+        <label class="label">Password</label>
+        <input type="text" class="input" placeholder="*********">
+        <i class="fas fa-lock"></i>
+      </div>
+
+      <div class="forgot">
+        <a href="#">Forgot Password ?</a>
+        <div style="clear: both;"></div>
+      </div>
+
+      <div class="login">
+        <a href="#">Login</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
